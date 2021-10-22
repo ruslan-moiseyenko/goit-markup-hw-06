@@ -414,19 +414,50 @@
                         </a>
                     </li>
                 </ul>
-                <!-- ------END OF SOCIAL LINKS----- -->
             </div>
+            <!-- ------END OF SOCIAL LINKS----- -->
+
+            <form class="footer-form">
+                <h2>Подпишитесь на рассылку</h2>
+                <div class="footer-sign-in">
+                    <input type="email" class="footer-form-email" placeholder="E-mail">
+                    <button class="btn">
+                        Подписаться
+                        <svg class="icon-linkedin svg" width="24px" height="24px">
+                            <use href="./img/sprite.svg#send"></use>
+                        </svg>
+                    </button>
+                </div>
+            </form>
         </div>
     </footer>
 
     <!-- -----------------MODAL WINDOW----------------------- -->
-    <div class="backdrop  is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button class="close-btn" data-modal-close>
                 <svg class="icon-close svg" width="30px" height="30px">
                     <use href="./img/sprite.svg#close"></use>
                 </svg>
             </button>
+            <h2>Оставьте свои данные, мы вам перезвоним</h2>
+            <form class="modal-form">
+                <label for="name">Имя</label>
+                <input type="text" name="name" id="name">
+                <label for="tel">Телефон</label>
+                <input type="text" name="tel" id="tel">
+                <label for="email">Почта</label>
+                <input type="email" name="email" id="email">
+                <label for="comment">Комментарий</label>
+                <textarea name="comment" id="comment"></textarea>
+                <label for="checkbox" class="label-checkbox">
+                    <input type="checkbox" name="check" id="check">
+                    Соглашаюсь с рассылкой и принимаю
+                    <a href="">Условия договора</a>
+                </label>
+                <button class="btn">Отправить</button>
+
+            </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>

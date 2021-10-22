@@ -249,7 +249,7 @@ header a {
 }
 
 
-.hero-btn {
+.btn {
     width: 200px;
     height: 50px;
     border-radius: 4px;
@@ -265,8 +265,8 @@ header a {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-btn:hover,
-.hero-btn:focus {
+.btn:hover,
+.btn:focus {
     background-color: #188CE8;
 }
 
@@ -571,11 +571,14 @@ footer {
     text-align: left;
 }
 
-.social-links h2 {
+.footer h2 {
+    display: inline-block;
+
     color: var(--main-white-color);
     font-size: 14px;
     line-height: 1.14;
     margin-bottom: 20px;
+    text-transform: uppercase;
 }
 
 .footer .icon {
@@ -591,6 +594,59 @@ footer {
     list-style-type: none;
     display: flex;
     /* align-intems: left; */
+}
+
+.footer-form {
+    margin-left: 93px;
+    margin-top: 12px;
+}
+
+.footer-sign-in {
+    display: inline-flex;
+}
+
+.footer-form-email {
+
+    height: 50px;
+    width: 358px;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: none;
+    border: 1px solid var(--icons-color);
+    border-radius: 4px;
+    background-color: var(--footer-bg-color);
+    color: var(--main-white-color);
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.footer-form-email:focus-within {
+    border-color: var(--accent-color);
+}
+
+.footer .btn {
+    display: flex;
+    align-items: center;
+
+    text-align: center;
+    margin-left: 12px;
+    padding-left: 29px;
+}
+
+.icon-send {
+    background: red;
+    color: green;
+    fill: red;
+    fill-opacity: 0;
+}
+
+
+.footer-form .svg {
+    display: inline-block;
+
+    margin-left: 10px;
+
 }
 
 /* --------------------------------------- */
@@ -621,8 +677,8 @@ footer {
     left: 50%;
 
     width: 528px;
-    height: 581px;
-    padding: 8px;
+    /* height: 581px; */
+    padding: 40px;
     border-radius: 4px;
 
     background-color: var(--main-white-color);
@@ -639,9 +695,14 @@ footer {
     padding: 0;
     border: none;
     background-color: var(--main-white-color);
-    color: var(--main-white-color);
+    color: black;
     cursor: pointer;
 }
+
+.modal .close-btn:hover {
+    color: var(--accent-color);
+}
+
 
 .modal .svg {
     fill: currentColor;
@@ -650,6 +711,70 @@ footer {
 .is-hidden {
     opacity: 0;
     pointer-events: none;
+}
+
+.modal-form {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    /* outline: 1px solid green; */
+}
+
+.modal-form label {
+    margin-bottom: 4px;
+}
+
+.modal-form input {
+    margin-bottom: 10px;
+    outline: none;
+    border: 1px solid var(--icons-color);
+    border-radius: 4px;
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form input:focus-within {
+    border-color: var(--accent-color);
+}
+
+#comment {
+    height: 120px;
+    margin-bottom: 20px;
+    outline: none;
+    border: 1px solid var(--icons-color);
+    border-radius: 4px;
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#comment:focus-within {
+    border-color: var(--accent-color);
+}
+
+.modal-form .btn {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modal h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.modal-form label {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+}
+
+#check {
+    margin-bottom: 30px;
+}
+
+.label-checkbox {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*---------------------------------------------- */
